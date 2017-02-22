@@ -37,6 +37,7 @@ if __name__=='__main__':
             if 'font-size:%dpx'%max_size in style:
                 titles.append(item)
         new_filename=titles[0].text
+        new_filename=new_filename.replace(":","-")
         os.rename(input_file,new_filename+'.pdf')
         print('已重命名为: ',new_filename)
         if os.path.exists(tmp_path):

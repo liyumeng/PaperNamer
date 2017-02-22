@@ -1,6 +1,6 @@
 # PaperNamer
 
-一款自动将pdf论文文件以论文标题进行重命名的工具。
+将pdf文件名以论文Title进行重命名。
 
 ## 依赖环境
 Python 3.5
