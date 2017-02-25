@@ -34,3 +34,5 @@ REM ________________________________________________________________
 
 REG ADD HKEY_CLASSES_ROOT\*\shell\PaperNamer\command /ve /t REG_SZ /d "%~dp0papernamer.cmd \"%%1\"" /f
 REG ADD HKEY_CLASSES_ROOT\*\shell\PaperNamer /v Icon /t REG_SZ /d "%~dp0\pdf.ico" /f
+pip install numpy
+pip install bs4

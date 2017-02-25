@@ -6,6 +6,7 @@ import shutil
 import subprocess
 
 if __name__=='__main__':
+    print('正在重命名...')
     input_file=sys.argv[1]
     if input_file.endswith('.pdf')==False:
         print('只能处理pdf文件')
@@ -18,7 +19,7 @@ if __name__=='__main__':
     if os.path.exists(tmp_path):
         shutil.rmtree(tmp_path)
         
-    p = subprocess.Popen([pdftohtml_path,'-q',input_file,tmp_path],
+    p = subprocess.Popen([pdftohtml_path,'-q','-l','1',input_file,tmp_path],
             bufsize=2048, stdin=subprocess.PIPE)
     p.wait()
     
