@@ -15,4 +15,4 @@ pip install bs4
 
 在pdf文件上点击右键，选择papernamer完成文件重命名。
 
-![](imgs/img1.png)
+![](imgs/img1.gif)
